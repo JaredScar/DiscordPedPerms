@@ -23,7 +23,7 @@ AddEventHandler("DiscordPedPerms:CheckPerms", function()
 	end
 	local hasPerms = {} -- Has perms for indexes:
 	if identifierDiscord then
-		local roleIDs = exports.discord_perms:GetRoles(src)
+		local roleIDs = exports.Badger_Discord_API:GetDiscordRoles(src)
 		-- Loop through roleList and set their role up:
 		if not (roleIDs == false) then
 			for i = 1, #roleList do
